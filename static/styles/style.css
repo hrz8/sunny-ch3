@@ -36,3 +36,52 @@
     right: -70px;
 }
 
+#features {
+    background-image: url('../images/features-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0.7) inset;
+    display: flex;
+    align-items: center;
+}
+
+.game-list {
+    list-style-type: none;
+}
+
+.game-list:before {
+    content: '';
+    background: white;
+    width: 2px;
+    height: 130px;
+    position: absolute;
+    left: 20px;
+}
+
+.game-item > h5 {
+    color: #ffb548;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.game-item > p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.game-item.active:before {
+    content: '';
+    background-image: url('../images/ellipse.svg');
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+}
+
+.game-item.inactive:before {
+    content: '';
+    background-image: url('../images/ellipse-outline.svg');
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+}
